@@ -1,4 +1,4 @@
-var myfunc=function(sentence,arr){
+let myfunc=function(sentence,arr){
     for(i=0; i<arr.length; i++){
        sentence=sentence.replace("_", arr[i]);
     } 
@@ -7,12 +7,12 @@ var myfunc=function(sentence,arr){
 
 }
 
-print(myfunc("_, we have a _.",["Houston", "problem"]));
-print(myfunc("If at _ you don’t _, try, try _.",["first", "succeed", "again"]));
-print(myfunc("May the _ _ _ _.",["Force", "be", "with", "you"]));
+console.log (myfunc("_, we have a _.",["Houston", "problem"]));
+console.log(myfunc("If at _ you don’t _, try, try _.",["first", "succeed", "again"]));
+console.log(myfunc("May the _ _ _ _.",["Force", "be", "with", "you"]));
 
 
-var myfunc=function(arr){
+let myfunc=function(arr){
     
     let oddarr=[];
     let evenarr=[];
@@ -37,12 +37,12 @@ var myfunc=function(arr){
 
 }
 
-print(myfunc([8, 0, 1, "hey", 12, 5 , true, "2", null, 7, 3]));
-print(myfunc([8, 8, "meh", 6]));
-print(myfunc([null, null, 1, undefined, 5, 9, false]));
+console.log(myfunc([8, 0, 1, "hey", 12, 5 , true, "2", null, 7, 3]));
+console.log(myfunc([8, 8, "meh", 6]));
+console.log(myfunc([null, null, 1, undefined, 5, 9, false]));
 
 
-var myfunc=function(arr){
+let myfunc=function(arr){
     let count=0;
     for(i=0;i<arr.length;i++){
         if(typeof arr[i]=='number'){
@@ -53,11 +53,11 @@ var myfunc=function(arr){
 
 }
 
-print(myfunc([1, "10", "hi", 2, 3]));
-print(myfunc([1, 4, "i am a string", "456"]));
+console.log(myfunc([1, "10", "hi", 2, 3]));
+console.log(myfunc([1, 4, "i am a string", "456"]));
 
 
-var myfunc=function(arr){
+let myfunc=function(arr){
     let maxval=0;
     let minval=Number.MAX_VALUE;
     for(i=0;i<arr.length;i++){
@@ -73,11 +73,11 @@ var myfunc=function(arr){
 
 }
 
-print(myfunc(["anymore", "raven", "me", "communicate"]));
-print(myfunc(["wish", "slightly", "understand", "longer","unexpected", "heart"]));
+console.log(myfunc(["anymore", "raven", "me", "communicate"]));
+console.log(myfunc(["wish", "slightly", "understand", "longer","unexpected", "heart"]));
 
 
-var myfunc=function(arr){
+let myfunc=function(arr){
     let sum=0;
     for(i=0;i<arr.length;i++){
     sum=sum+arr[i];
@@ -85,12 +85,12 @@ var myfunc=function(arr){
     return sum;
 }
 
-print(myfunc([1, 12, 4]));
-print(myfunc([-1, 0, 1, 2]));
-print(myfunc([]));
-print(myfunc([-1, 0.4]));
+console.log(myfunc([1, 12, 4]));
+console.log(myfunc([-1, 0, 1, 2]));
+console.log(myfunc([]));
+console.log(myfunc([-1, 0.4]));
 
-var myfunc=function(arr){
+let myfunc=function(arr){
     let prodarr=[];
     for(i=0;i<arr.length-1;i++){
       prodarr.push(arr[i]*arr[i+1]);
@@ -98,5 +98,5 @@ var myfunc=function(arr){
     return prodarr;
 }
 
-print(myfunc([3, 7, 12, 5, 20, 0]));
-print(myfunc([1, 1, 4, 32, 6]));
+console.log(myfunc([3, 7, 12, 5, 20, 0]));
+console.log(myfunc([1, 1, 4, 32, 6]));
